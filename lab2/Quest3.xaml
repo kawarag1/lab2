@@ -12,7 +12,7 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <ListBox x:Name="PlanetsView" Grid.Column="0" SelectionChanged="PlanetsView_SelectionChanged">
+        <ListBox x:Name="PlanetsView" Grid.Column="0" SelectionChanged="PlanetsView_SelectionChanged" Margin="0,0,0,40">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <TextBlock Text="{Binding Name}"/>
@@ -20,5 +20,6 @@
             </ListBox.ItemTemplate>
         </ListBox>
         <TextBlock x:Name="Decs" Grid.Column="1" TextWrapping="Wrap"/>
+        <Button x:Name="Next" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="120" Content="Задание 4" Margin="10" Click="Next_Click"/>
     </Grid>
 </Window>

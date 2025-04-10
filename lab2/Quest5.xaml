@@ -1,0 +1,27 @@
+﻿<Window x:Class="lab2.Quest5"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab2"
+        mc:Ignorable="d"
+        Title="Quest5" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Menu Grid.Row="0">
+            <MenuItem Header="Файл">
+                <MenuItem Header="Открыть" Click="OpenFile_Click"/>
+                <MenuItem Header="Сохранить" Click="SaveFile_Click"/>
+            </MenuItem>
+        </Menu>
+
+        <TextBox x:Name="txtContent" Grid.Row="1" AcceptsReturn="True" AcceptsTab="True" TextWrapping="Wrap" 
+                 VerticalScrollBarVisibility="Auto"
+                 HorizontalScrollBarVisibility="Auto"
+                 FontSize="14"/>
+    </Grid>
+</Window>

@@ -79,5 +79,11 @@ namespace lab2
             var Planet = PlanetsView.SelectedItem as Planet;
             Decs.Text = Planet.Description;
         }
+
+        private void Next_Click(object sender, RoutedEventArgs e)
+        {
+            Quest4 window = new Quest4();
+            window.Show();
+        }
     }
 }
